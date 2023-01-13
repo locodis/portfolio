@@ -1,0 +1,70 @@
+/*kullanacağımız font family google fonts dan poppins linkini import ettik*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Hanken+Grotesk:ital,wght@1,200&family=Inter:wght@700&family=Lato&family=Passions+Conflict&family=Poppins:ital,wght@0,300;1,300&family=Titillium+Web:wght@200&display=swap');
+
+/* sayfamız da reset işlemleri yapıyoruz*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+/* genel olarak sayfamızın ekranda taşma yapmaması scroll olmaması için |*/
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f3f5f8;
+}
+
+/* gezinti:nav bölümünü yatay olarak hızalayacağız | standart olarak flex direction row zaten|*/
+nav {
+    display: flex;
+    /*flex-direction: row;*/
+    width: 100%;
+    justify-content: space-around;
+    /* sağa sola eşit yaslama yapıyoruz*/
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+  
+  
+    /* burada line height belirleyerek buradaki element/nesneler(nav içeriklerinin) her neyse satırın tam ortasında kalmasını sağlıyoruz*/
+    
+    
+}
+
+.logo {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 40px;
+    font-weight: 800;
+    cursor: pointer;
+    color:#3d535f;
+    
+}
+b{
+    font-size: 70px;
+    color: #7f00ff;
+}
+.navItems{
+    display: flex;
+}
+.navItems li{
+    list-style: none;
+    margin: 0 15px;
+    /*margin için 2 değer verdik birincisi üstten alttan 0 ve ikincisi sağdan soldan 15 piksel*/
+    
+}
+.navItems li a{
+    font-size: 25px;
+    color: #3d535f;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
